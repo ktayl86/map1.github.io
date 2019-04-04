@@ -1,7 +1,7 @@
 let myMap = L.map('map1').setView([32.18, -99.14], 4)
 L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png').addTo(myMap)
-let Apartment = L.marker([-91.17255449295044, 30.413138899416396]).addTo(myMap)
-let LSU = L.polygon([
+let polygon = L.marker([-91.17255449295044, 30.413138899416396]).addTo(myMap)
+let point = L.polygon([
   [-91.1945915222168, 30.41822071510673],
   [-91.20600700378418, 30.394791736572984],
   [-91.1888837814331, 30.38905392609894],
@@ -9,8 +9,8 @@ let LSU = L.polygon([
   [-91.17047309875488, 30.419738037994318],
   [-91.1945915222168, 30.41822071510673]
 ]).addTo(myMap)
-LSU.bindPopup('A polygon')
-Apartment.bindPopup('A marker')
+polygon.bindPopup('LSU Main Campus')
+point.bindPopup('My Apartment')
 // create a red polyline from an array of LatLng points
 var latlngs = [
   [-91.17267251014708, 30.413460424044256],

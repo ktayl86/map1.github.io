@@ -9,8 +9,8 @@ let polygon = L.polygon([
   [-91.17047309875488, 30.419738037994318],
   [-91.1945915222168, 30.41822071510673]
 ]).addTo(myMap)
-polygon.bindPopup('LSU Main Campus')
-marker.bindPopup('My Apartment')
+LSU Main Campus.bindPopup('A polygon')
+My Apartment.bindPopup('A marker')
 // create a red polyline from an array of LatLng points
 var latlngs = [
   [-91.17267251014708, 30.413460424044256],

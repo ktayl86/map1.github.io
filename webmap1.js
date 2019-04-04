@@ -1,4 +1,4 @@
-let myMap = L.map('map1').setView([32.18, -99.14], 4)
+let myMap = L.map('map1').setView([50, -99.14], 4)
 let basemapUrl = 'https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png'
 L.tileLayer(basemapUrl).addTo(myMap)
 let point = L.marker([30.41317822262917, -91.17254376411438]).addTo(myMap)
@@ -10,7 +10,7 @@ let polygon = L.polygon([
   [30.419738037994318, -91.17047309875488],
   [30.41822071510673, -91.1945915222168]
 ]).addTo(myMap)
-polygon.bindPopup('LSU Main Camp')
+polygon.bindPopup('LSU Main Campus')
 point.bindPopup('My Apartment')
 // create a red polyline from an array of LatLng points
 var latlngs = [

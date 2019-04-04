@@ -1,7 +1,7 @@
 let myMap = L.map('map1').setView([32.18, -99.14], 4)
 let basemapUrl = 'https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png'
 L.tileLayer(basemapUrl).addTo(myMap)
-let point = L.marker([30.411912, -91.183643]).addTo(myMap)
+let point = L.marker([30.41317822262917, -91.17254376411438]).addTo(myMap)
 let polygon = L.polygon([
   [30.41822071510673, -91.1945915222168],
   [30.394791736572984, -91.20600700378418],

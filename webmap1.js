@@ -3,12 +3,9 @@ let basemapUrl = 'https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png'
 L.tileLayer(basemapUrl).addTo(myMap)
 let point = L.marker([30, -90]).addTo(myMap)
 let polygon = L.polygon([
-  [30.41822071510673, -91.1945915222168],
-  [30.394791736572984, -91.20600700378418],
-  [30.38905392609894, -91.1888837814331],
-  [30.409745477799135, -91.16669654846191],
-  [30.419738037994318, -91.17047309875488],
-  [30.41822071510673, -91.1945915222168]
+  [51.509, -0.08],
+  [51.503, -0.06],
+  [51.51, -0.047]
 ]).addTo(myMap)
 polygon.bindPopup('A polygon')
 marker.bindPopup('A marker')

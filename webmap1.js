@@ -1,4 +1,4 @@
-let myMap = L.map('map1').setView([50, -99.14], 4)
+let myMap = L.map('map1').setView([32.18, -100], 4)
 let basemapUrl = 'https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png'
 L.tileLayer(basemapUrl).addTo(myMap)
 let point = L.marker([30.41317822262917, -91.17254376411438]).addTo(myMap)
